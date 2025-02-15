@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+body{
+    background-color: rgb(253, 184, 157);
+}
+.upper-card{
+    height: 460px;
+    width: 350px;
+    border: 1px solid black;
+    background: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    z-index: 0;
+    margin-top: 100px;
+    transform: rotate(-17deg);
+    box-shadow: 0px 1px 15px rgb(49, 49, 49);
+}
+.upper-card>.headings{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.4rem;
+    margin-left: 30px;
+}
+.upper-card>.headings>.heading1{
+    color: green;
+    margin-left: 30px;
+}
+.upper-card>.headings>.heading2{
+    color: red;
+}
+.upper-card>.para{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: rgb(39, 39, 39);
+}
+.upper-card>.para>span{
+    color: red;
+}
+.inner-card{
+    height: 460px;
+    width: 350px;
+    border: 1px solid black;
+    background: rgb(244, 244, 180);
+    transition: all ease-in-out ;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+    gap: 10px;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+}
+.inner-card>img{
+    margin: 0 70px;
+}
+.inner-card>.set1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.inner-card>.set2{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.inner-card>.set3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.inner-card>.set4{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.inner-card>div>span{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(255, 200, 179);
+}
+.inner-card:hover{
+    translate: 400px;
+    transform: rotate(20deg);
+    cursor: pointer;
+}
